@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="16dp"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+  <EditText
+    android:id="@+id/userInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:drawableEnd="@drawable/ic_cancel_24"
+    android:ems="10"
+    android:hint="@string/input_hint"
+    android:imeOptions="actionDone"
+    android:importantForAutofill="no"
+    android:inputType="textPersonName"
+    android:text="@string/default_text" />
+
+  <TextView
+      android:id="@+id/labelEnc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/userInput"
+      android:layout_marginTop="16dp"
+      android:text="@string/enc_label" />
+
+  <TextView
+      android:id="@+id/textViewEnc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/labelEnc"
+      android:layout_marginTop="8dp"
+      android:maxLines="10"
+      android:minLines="5" />
+
+  <TextView
+      android:id="@+id/labelRecvd"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textViewEnc"
+      android:layout_marginTop="16dp"
+      android:text="@string/recvd_label" />
+
+  <TextView
+      android:id="@+id/textViewRecvd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/labelRecvd"
+      android:layout_marginTop="8dp"
+      android:maxLines="10"
+      android:minLines="5" />
+
+  <TextView
+      android:id="@+id/labelDec"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textViewRecvd"
+      android:layout_marginTop="16dp"
+      android:text="@string/dec_label" />
+
+  <TextView
+      android:id="@+id/textViewDec"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/labelDec"
+      android:layout_marginTop="8dp"
+      android:maxLines="10"
+      android:minLines="5" />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:backgroundTint="@color/primary"
+      android:onClick="sendDataClicked"
+      android:text="@string/send_data" />
+</RelativeLayout>

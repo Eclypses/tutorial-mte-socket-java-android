@@ -1,0 +1,21 @@
+<resources>
+  <string name="app_name">Java Socket Tutorial</string>
+  <string name="input_hint">Enter text to send to server.</string>
+  <string name="default_text">Hello World!</string>
+  <string name="enc_label">Was encoded as ...</string>
+  <string name="recvd_label">... was received back as ...</string>
+  <string name="dec_label">and was decoded as ...</string>
+  <string name="send_data">Send Data</string>
+  <string name="enc_ready">Encoder is ready!</string>
+  <string name="enc_not_ready">Unable to create encoder</string>
+  <string name="dec_ready">Decoder is ready!</string>
+  <string name="dec_not_ready">Unable to create decoder</string>
+  <string name="mte_init_failed">Error initializing MTE!</string>
+  <string name="enc_no_encode">Unable to encode text</string>
+  <string name="dec_no_decode">Unable to decode received data</string>
+  <string name="connected">Connected to server.</string>
+  <string name="not_connected">Could not connect to server.</string>
+  <string name="setup">Setup</string>
+  <string name="ip_address">Server`s IP Address:</string>
+  <string name="port_number">Server`s Port Number:</string>
+</resources>
