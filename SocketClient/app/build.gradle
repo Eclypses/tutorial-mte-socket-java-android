@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion '33.0.2'
+    namespace 'com.example.socket_tutorial_mte_java'
+
+    defaultConfig {
+        applicationId "com.example.socket_tutorital_mte_java"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 6
+        versionName '2.00'
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation files('libs/package-ecdhp256-1.0.0-release.aar')
+    implementation files('libs/package-mte-3.1.2-release.aar')
+}

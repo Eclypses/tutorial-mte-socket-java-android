@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFA00000</color>
+    <color name="green">#FF008000</color>
+    <color name="primary">#FFFF5722</color>
+    <color name="primary_dark">#FFE64A19</color>
+    <color name="accent">#FFFFAB91</color>
+    <color name="icon_bkgnd">#FF333333</color>
+</resources>
